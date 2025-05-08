@@ -11,15 +11,15 @@ namespace CustomerSystem.Backend
     {
         protected override void Load(ContainerBuilder builder)
         {
-        
             var serviceAssembly = AppDomain.CurrentDomain
                 .GetAssemblies()
                 .FirstOrDefault(t => t.GetName().Name == "CustomerSystem.Backend");
 
-            builder.RegisterAssemblyTypes(serviceAssembly)
-                   .Where(t => t.Name.EndsWith("Impl"))
-                   .AsImplementedInterfaces()
-                   .SingleInstance();
+            if (serviceAssembly != null)
+                builder.RegisterAssemblyTypes(serviceAssembly)
+                    .Where(t => t.Name.EndsWith("Impl"))
+                    .AsImplementedInterfaces()
+                    .SingleInstance();
         }
     }
 }

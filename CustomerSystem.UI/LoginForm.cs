@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CustomerSystem.Backend.Models;
 using CustomerSystem.Backend.Services;
 
 namespace CustomerSystem.UI
@@ -25,8 +26,15 @@ namespace CustomerSystem.UI
         private void button1_Click(object sender, EventArgs e)
         {
 
+            
+            _accountService.SaveUserInfo(new UserInfo()
+            {
+                Id = 1L,
+                Username = "3125153",
+                Password = "123153135"
+            });
 
-            Console.WriteLine($"testaetast={_accountService.Login()}");
+            Console.WriteLine($@"testaetast={_accountService.Login()}");
 
             this.DialogResult = DialogResult.OK;
             this.Close();

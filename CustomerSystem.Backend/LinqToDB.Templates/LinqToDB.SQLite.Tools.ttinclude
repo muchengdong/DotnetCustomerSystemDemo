@@ -1,0 +1,4 @@
+<#@ include file="$(LinqToDBT4SQLiteTemplatesPath)LinqToDB.SQLite.ttinclude" once="true" #>
+<#+
+#warning 'LinqToDB.SQLite.Tools.ttinclude' is obsolete. Use 'LinqToDB.SQLite.ttinclude' instead.
+#>

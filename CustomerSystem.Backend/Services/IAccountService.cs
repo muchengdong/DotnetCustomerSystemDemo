@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CustomerSystem.Backend.Models;
 
 namespace CustomerSystem.Backend.Services
 {
@@ -10,5 +11,10 @@ namespace CustomerSystem.Backend.Services
     {
 
         string Login();
+        
+        void SaveUserInfo(UserInfo userInfo);
+        
+        List<UserInfo> ListUserInfos();
+
     }
 }
