@@ -16,5 +16,7 @@ namespace CustomerSystem.UI.Views
         {
             InitializeComponent();
         }
+        
+        
     }
 }
