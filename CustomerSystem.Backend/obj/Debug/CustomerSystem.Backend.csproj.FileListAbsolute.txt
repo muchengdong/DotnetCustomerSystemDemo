@@ -1,0 +1,16 @@
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\bin\Debug\CustomerSystem.Backend.dll
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\bin\Debug\CustomerSystem.Backend.pdb
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\bin\Debug\Autofac.dll
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\bin\Debug\Autofac.pdb
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\bin\Debug\Autofac.xml
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\obj\Debug\CustomerSystem.Backend.csproj.AssemblyReference.cache
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\obj\Debug\CustomerSystem.Backend.csproj.CoreCompileInputs.cache
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\obj\Debug\Customer.8CFCB51F.Up2Date
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\obj\Debug\CustomerSystem.Backend.dll
+C:\Users\dongfz\source\repos\CustomerSystem_demo\CustomerSystem.Backend\obj\Debug\CustomerSystem.Backend.pdb
