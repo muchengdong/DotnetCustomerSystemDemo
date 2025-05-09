@@ -29,12 +29,9 @@ namespace CustomerSystem.UI
             {
                 var loginForm = scope.Resolve<LoginForm>();
                 var dialogResult = loginForm.ShowDialog();
-                if (DialogResult.OK.Equals(dialogResult)) 
-                {
-                    var mainForm = scope.Resolve<MainForm>();
-                    Application.Run(mainForm);
-                }
-
+                if (!DialogResult.OK.Equals(dialogResult)) return;
+                var mainForm = scope.Resolve<MainForm>();
+                Application.Run(mainForm);
             }
         }
     }

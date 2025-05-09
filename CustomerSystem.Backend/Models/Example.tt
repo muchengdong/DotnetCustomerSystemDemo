@@ -23,7 +23,7 @@
 
 	// Loading metadata
 	//
-	LoadSQLiteMetadata(@"../", "example.sqlite");
+	LoadSQLiteMetadata(@"../../", "example.sqlite");
 //	LoadSQLiteMetadata(string connectionString);
 
 	// Customizing generation process

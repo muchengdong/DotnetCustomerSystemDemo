@@ -25,20 +25,9 @@ namespace CustomerSystem.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            
-            _accountService.SaveUserInfo(new UserInfo()
-            {
-                Id = 1L,
-                Username = "3125153",
-                Password = "123153135"
-            });
-
             Console.WriteLine($@"testaetast={_accountService.Login()}");
-
-            this.DialogResult = DialogResult.OK;
-            this.Close();
-
+            DialogResult = DialogResult.OK;
+            Close();
         }
     }
 }

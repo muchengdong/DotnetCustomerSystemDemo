@@ -25,7 +25,7 @@ namespace CustomerSystem.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string result =  _accountService.Login();
+            var result =  _accountService.Login();
             button1.Text = result;
         }
     }
