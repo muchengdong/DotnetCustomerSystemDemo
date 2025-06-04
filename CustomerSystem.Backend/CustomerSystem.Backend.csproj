@@ -85,6 +85,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".editorconfig" />
     <Content Include="example.sqlite" />
     <Content Include="LinqToDB.Templates\CopyMe.SQLite.tt.txt" />
     <Content Include="LinqToDB.Templates\DataAnnotations.ttinclude" />

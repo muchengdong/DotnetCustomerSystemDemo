@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using CustomerSystem.Backend.Models;
 
-namespace CustomerSystem.Backend.Services
-{
-    public interface IAccountService
-    {
-
+namespace CustomerSystem.Backend.Services {
+    public interface IAccountService {
         string Login();
-        
-        void SaveUserInfo(UserInfo userInfo);
-        
-        List<UserInfo> ListUserInfos();
 
+        void SaveUserInfo(UserInfo userInfo);
+
+        List<UserInfo> ListUserInfos();
     }
 }

@@ -1,0 +1,7 @@
+# .editorconfig 文件内容
+root = true
+
+# C# 设置
+[*.cs]
+# 不允许花括号换行
+csharp_new_line_before_open_brace = none
