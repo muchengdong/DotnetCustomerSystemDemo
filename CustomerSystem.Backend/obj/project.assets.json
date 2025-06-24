@@ -1,0 +1,1605 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "Autofac/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "linq2db/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.Compat/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "linq2db": "6.0.0-preview.4"
+        },
+        "compile": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.SQLite/6.0.0-preview.4": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/LinqToDB.Templates/CopyMe.SQLite.tt.txt": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/DataAnnotations.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/DataModel.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/EditableObject.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Equatable.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Humanizer.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.Tools.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.Tools.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/MultipleFiles.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/NotifyPropertyChanged.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/ObsoleteAttributes.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/PluralizationService.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/README.md": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/T4Model.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Validation.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/linq2db.SQLite.props": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win": {
+      "Autofac/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "linq2db/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.Compat/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "linq2db": "6.0.0-preview.4"
+        },
+        "compile": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.SQLite/6.0.0-preview.4": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/LinqToDB.Templates/CopyMe.SQLite.tt.txt": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/DataAnnotations.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/DataModel.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/EditableObject.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Equatable.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Humanizer.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.Tools.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.Tools.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/MultipleFiles.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/NotifyPropertyChanged.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/ObsoleteAttributes.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/PluralizationService.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/README.md": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/T4Model.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Validation.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/linq2db.SQLite.props": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-arm64": {
+      "Autofac/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "linq2db/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.Compat/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "linq2db": "6.0.0-preview.4"
+        },
+        "compile": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.SQLite/6.0.0-preview.4": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/LinqToDB.Templates/CopyMe.SQLite.tt.txt": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/DataAnnotations.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/DataModel.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/EditableObject.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Equatable.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Humanizer.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.Tools.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.Tools.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/MultipleFiles.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/NotifyPropertyChanged.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/ObsoleteAttributes.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/PluralizationService.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/README.md": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/T4Model.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Validation.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/linq2db.SQLite.props": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x64": {
+      "Autofac/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "linq2db/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.Compat/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "linq2db": "6.0.0-preview.4"
+        },
+        "compile": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.SQLite/6.0.0-preview.4": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/LinqToDB.Templates/CopyMe.SQLite.tt.txt": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/DataAnnotations.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/DataModel.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/EditableObject.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Equatable.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Humanizer.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.Tools.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.Tools.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/MultipleFiles.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/NotifyPropertyChanged.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/ObsoleteAttributes.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/PluralizationService.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/README.md": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/T4Model.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Validation.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/linq2db.SQLite.props": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x86": {
+      "Autofac/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "linq2db/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.Compat/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "linq2db": "6.0.0-preview.4"
+        },
+        "compile": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.SQLite/6.0.0-preview.4": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/LinqToDB.Templates/CopyMe.SQLite.tt.txt": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/DataAnnotations.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/DataModel.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/EditableObject.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Equatable.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Humanizer.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.Tools.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.Tools.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/LinqToDB.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/MultipleFiles.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/NotifyPropertyChanged.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/ObsoleteAttributes.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/PluralizationService.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/README.md": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/T4Model.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/LinqToDB.Templates/Validation.ttinclude": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/linq2db.SQLite.props": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Autofac/5.2.0": {
+      "sha512": "V8dBH0dsv75uDzl7Sw+HkhKDPUw2eXnlMjcSVMH+tLo2s67MpTKGyDj1pDcpR+IF2u4YRs0s3/x7R88YJzIWvg==",
+      "type": "package",
+      "path": "autofac/5.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.5.2.0.nupkg.sha512",
+        "autofac.nuspec",
+        "icon.png",
+        "lib/net461/Autofac.dll",
+        "lib/net461/Autofac.pdb",
+        "lib/net461/Autofac.xml",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.pdb",
+        "lib/netstandard2.0/Autofac.xml",
+        "lib/netstandard2.1/Autofac.dll",
+        "lib/netstandard2.1/Autofac.pdb",
+        "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
+    "linq2db/6.0.0-preview.4": {
+      "sha512": "W68/oB9nIylskn/tXKDb7pFW3APUT50cCmQr4Z62xpDt4E/nTXaJVs4ELiZby/QFyYKAxUtSAUiQ+NyIb2sIGA==",
+      "type": "package",
+      "path": "linq2db/6.0.0-preview.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "MIT-LICENSE.txt",
+        "README.md",
+        "images/icon.png",
+        "lib/net462/linq2db.dll",
+        "lib/net462/linq2db.xml",
+        "lib/net6.0/linq2db.dll",
+        "lib/net6.0/linq2db.xml",
+        "lib/net8.0/linq2db.dll",
+        "lib/net8.0/linq2db.xml",
+        "lib/net9.0/linq2db.dll",
+        "lib/net9.0/linq2db.xml",
+        "lib/netstandard2.0/linq2db.dll",
+        "lib/netstandard2.0/linq2db.xml",
+        "linq2db.6.0.0-preview.4.nupkg.sha512",
+        "linq2db.nuspec"
+      ]
+    },
+    "linq2db.Compat/6.0.0-preview.4": {
+      "sha512": "PM6x17d96i0u7StaxiOJwEmwuD+Vmzrr5oTxXXd+Gee5kApaXklSMnYmBeoDLFfpT5CouEAlr42BEKXvSogFEA==",
+      "type": "package",
+      "path": "linq2db.compat/6.0.0-preview.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "MIT-LICENSE.txt",
+        "README.md",
+        "images/icon.png",
+        "lib/net462/linq2db.Compat.dll",
+        "lib/net462/linq2db.Compat.xml",
+        "lib/net6.0/linq2db.Compat.dll",
+        "lib/net6.0/linq2db.Compat.xml",
+        "lib/net8.0/linq2db.Compat.dll",
+        "lib/net8.0/linq2db.Compat.xml",
+        "lib/net9.0/linq2db.Compat.dll",
+        "lib/net9.0/linq2db.Compat.xml",
+        "lib/netstandard2.0/linq2db.Compat.dll",
+        "lib/netstandard2.0/linq2db.Compat.xml",
+        "linq2db.compat.6.0.0-preview.4.nupkg.sha512",
+        "linq2db.compat.nuspec"
+      ]
+    },
+    "linq2db.SQLite/6.0.0-preview.4": {
+      "sha512": "Eh1EqFlB97oHmAbV9Y1Cwk5HA3+Qm0gJPTjaDzCurGDPAUm8qVkC8TBLe7qMbaktuS6M9i5bPQbSjjRbeSFy1A==",
+      "type": "package",
+      "path": "linq2db.sqlite/6.0.0-preview.4",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "MIT-LICENSE.txt",
+        "README.md",
+        "build/linq2db.SQLite.props",
+        "content/LinqToDB.Templates/CopyMe.SQLite.tt.txt",
+        "content/LinqToDB.Templates/DataAnnotations.ttinclude",
+        "content/LinqToDB.Templates/DataModel.ttinclude",
+        "content/LinqToDB.Templates/EditableObject.ttinclude",
+        "content/LinqToDB.Templates/Equatable.ttinclude",
+        "content/LinqToDB.Templates/Humanizer.ttinclude",
+        "content/LinqToDB.Templates/LinqToDB.SQLite.Tools.ttinclude",
+        "content/LinqToDB.Templates/LinqToDB.SQLite.ttinclude",
+        "content/LinqToDB.Templates/LinqToDB.Tools.ttinclude",
+        "content/LinqToDB.Templates/LinqToDB.ttinclude",
+        "content/LinqToDB.Templates/MultipleFiles.ttinclude",
+        "content/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude",
+        "content/LinqToDB.Templates/NotifyPropertyChanged.ttinclude",
+        "content/LinqToDB.Templates/ObsoleteAttributes.ttinclude",
+        "content/LinqToDB.Templates/PluralizationService.ttinclude",
+        "content/LinqToDB.Templates/README.md",
+        "content/LinqToDB.Templates/T4Model.ttinclude",
+        "content/LinqToDB.Templates/Validation.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/CopyMe.SQLite.tt.txt",
+        "contentFiles/any/any/LinqToDB.Templates/DataAnnotations.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/DataModel.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/EditableObject.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/Equatable.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/Humanizer.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.Tools.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/LinqToDB.Tools.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/LinqToDB.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/MultipleFiles.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/NotifyPropertyChanged.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/ObsoleteAttributes.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/PluralizationService.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/README.md",
+        "contentFiles/any/any/LinqToDB.Templates/T4Model.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/Validation.ttinclude",
+        "images/icon.png",
+        "linq2db.sqlite.6.0.0-preview.4.nupkg.sha512",
+        "linq2db.sqlite.nuspec",
+        "readme.txt",
+        "tools/Humanizer.dll",
+        "tools/Microsoft.Bcl.AsyncInterfaces.dll",
+        "tools/System.Data.SQLite.dll",
+        "tools/linq2db.Scaffold.dll",
+        "tools/linq2db.Tools.dll",
+        "tools/linq2db.dll",
+        "tools/x64/SQLite.Interop.dll",
+        "tools/x86/SQLite.Interop.dll"
+      ]
+    },
+    "Microsoft.Bcl.AsyncInterfaces/9.0.1": {
+      "sha512": "IVkmUqf+KzbuXKrxi2tyQlg11RArYk26t2eU5cHekff+7Ao09vH8vt8idC0BJSMnpiRV2OK66zM2EwJU6Tm5Cw==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Bcl.AsyncInterfaces.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Bcl.AsyncInterfaces.targets",
+        "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net462/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.9.0.1.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Configuration.ConfigurationManager/9.0.1": {
+      "sha512": "ntDQ+3A7vGq6jnv3KI8nv1Tfgmos9TG863xd/5tmms6LqrIxEze1RLuA3JB/AcpXMUSO70DXzXfPnJD2ZHFX0Q==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
+        "lib/net462/System.Configuration.ConfigurationManager.dll",
+        "lib/net462/System.Configuration.ConfigurationManager.xml",
+        "lib/net8.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net8.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net9.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net9.0/System.Configuration.ConfigurationManager.xml",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.9.0.1.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+      "sha512": "3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Threading.Tasks.Extensions.dll",
+        "lib/net461/System.Threading.Tasks.Extensions.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "Autofac >= 5.2.0",
+      "Microsoft.Bcl.AsyncInterfaces >= 9.0.1",
+      "System.Configuration.ConfigurationManager >= 9.0.1",
+      "System.Runtime.CompilerServices.Unsafe >= 4.5.3",
+      "System.Threading.Tasks.Extensions >= 4.5.4",
+      "System.ValueTuple >= 4.5.0",
+      "linq2db >= 6.0.0-preview.4",
+      "linq2db.Compat >= 6.0.0-preview.4",
+      "linq2db.SQLite >= 6.0.0-preview.4"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\dfz\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.Backend\\CustomerSystem.Backend.csproj",
+      "projectName": "CustomerSystem.Backend",
+      "projectPath": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.Backend\\CustomerSystem.Backend.csproj",
+      "packagesPath": "C:\\Users\\dfz\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.Backend\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "UsingMicrosoftNETSdk": false,
+      "configFilePaths": [
+        "C:\\Users\\dfz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "projectReferences": {}
+        }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "dependencies": {
+          "Autofac": {
+            "target": "Package",
+            "version": "[5.2.0, )"
+          },
+          "Microsoft.Bcl.AsyncInterfaces": {
+            "target": "Package",
+            "version": "[9.0.1, )"
+          },
+          "System.Configuration.ConfigurationManager": {
+            "target": "Package",
+            "version": "[9.0.1, )"
+          },
+          "System.Runtime.CompilerServices.Unsafe": {
+            "target": "Package",
+            "version": "[4.5.3, )"
+          },
+          "System.Threading.Tasks.Extensions": {
+            "target": "Package",
+            "version": "[4.5.4, )"
+          },
+          "System.ValueTuple": {
+            "target": "Package",
+            "version": "[4.5.0, )"
+          },
+          "linq2db": {
+            "target": "Package",
+            "version": "[6.0.0-preview.4, )"
+          },
+          "linq2db.Compat": {
+            "target": "Package",
+            "version": "[6.0.0-preview.4, )"
+          },
+          "linq2db.SQLite": {
+            "target": "Package",
+            "version": "[6.0.0-preview.4, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

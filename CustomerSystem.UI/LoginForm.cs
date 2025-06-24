@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CustomerSystem.Backend.Services;
@@ -6,14 +7,14 @@ using CustomerSystem.Backend.Services;
 namespace CustomerSystem.UI {
     public partial class LoginForm : Form {
         private readonly IAccountService _accountService;
-        private Panel collapsiblePanel;
-        private Button toggleButton;
         private Timer animationTimer;
+        private Panel collapsiblePanel;
+        private bool isExpanded;
+        private readonly int panelCollapsedHeight = 0;
 
-        private int panelExpandedHeight = 200;
-        private int panelCollapsedHeight = 0;
-        private bool isExpanded = false;
-        
+        private readonly int panelExpandedHeight = 200;
+        private Button toggleButton;
+
 
         public LoginForm(IAccountService accountService) {
             _accountService = accountService;
@@ -51,26 +52,22 @@ namespace CustomerSystem.UI {
         }
 
         private void button3_Click(object sender, EventArgs e) {
-            
         }
-        
-        private void InitializeCollapsiblePanel()
-        {
+
+        private void InitializeCollapsiblePanel() {
             // 初始化面板
-            collapsiblePanel = new Panel
-            {
-                BackColor = System.Drawing.Color.LightBlue,
+            collapsiblePanel = new Panel {
+                BackColor = Color.LightBlue,
                 Height = panelCollapsedHeight,
                 Width = 300,
                 Top = 50,
                 Left = 20,
                 BorderStyle = BorderStyle.FixedSingle
             };
-            this.Controls.Add(collapsiblePanel);
+            Controls.Add(collapsiblePanel);
 
             // 初始化按钮
-            toggleButton = new Button
-            {
+            toggleButton = new Button {
                 Text = "展开",
                 Width = 100,
                 Height = 30,
@@ -78,7 +75,7 @@ namespace CustomerSystem.UI {
                 Left = 20
             };
             toggleButton.Click += ToggleButton_Click;
-            this.Controls.Add(toggleButton);
+            Controls.Add(toggleButton);
 
             // 初始化动画计时器
             animationTimer = new Timer();
@@ -86,35 +83,27 @@ namespace CustomerSystem.UI {
             animationTimer.Tick += AnimationTimer_Tick;
         }
 
-        private void ToggleButton_Click(object sender, EventArgs e)
-        {
+        private void ToggleButton_Click(object sender, EventArgs e) {
             isExpanded = !isExpanded;
             toggleButton.Text = isExpanded ? "收起" : "展开";
             animationTimer.Start();
         }
 
-        private void AnimationTimer_Tick(object sender, EventArgs e)
-        {
-            if (isExpanded)
-            {
-                if (collapsiblePanel.Height < panelExpandedHeight)
-                {
+        private void AnimationTimer_Tick(object sender, EventArgs e) {
+            if (isExpanded) {
+                if (collapsiblePanel.Height < panelExpandedHeight) {
                     collapsiblePanel.Height += 10;
                 }
-                else
-                {
+                else {
                     collapsiblePanel.Height = panelExpandedHeight;
                     animationTimer.Stop();
                 }
             }
-            else
-            {
-                if (collapsiblePanel.Height > panelCollapsedHeight)
-                {
+            else {
+                if (collapsiblePanel.Height > panelCollapsedHeight) {
                     collapsiblePanel.Height -= 10;
                 }
-                else
-                {
+                else {
                     collapsiblePanel.Height = panelCollapsedHeight;
                     animationTimer.Stop();
                 }

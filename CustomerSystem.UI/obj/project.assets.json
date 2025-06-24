@@ -1,0 +1,3262 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "AntdUI/2.0.6": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Design"
+        ],
+        "compile": {
+          "lib/net48/AntdUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/AntdUI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Autofac/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "linq2db/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.Compat/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "linq2db": "6.0.0-preview.4"
+        },
+        "compile": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.SQLite/6.0.0-preview.4": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Async/1.0.168": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.8"
+        },
+        "frameworkAssemblies": [
+          "System.Net"
+        ],
+        "compile": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {
+            "related": ".Desktop.xml;.xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.dll": {
+            "related": ".Extensions.Desktop.xml;.Extensions.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {
+            "related": ".Desktop.xml;.xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.dll": {
+            "related": ".Extensions.Desktop.xml;.Extensions.xml;.xml"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
+      },
+      "Microsoft.Data.Sqlite/2.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "2.0.0-preview1-final",
+          "SQLitePCLRaw.bundle_green": "1.1.5"
+        }
+      },
+      "Microsoft.Data.Sqlite.Core/2.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0-preview1-25301-01",
+          "SQLitePCLRaw.core": "1.1.5",
+          "System.Data.Common": "4.3.0",
+          "System.ValueTuple": "4.3.0"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Packaging.Tools/1.0.0-preview1-25301-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Packaging.Tools.targets": {}
+        }
+      },
+      "NETStandard.Library/2.0.0-preview1-25301-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.Packaging.Tools": "1.0.0-preview1-25301-01"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.5": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.linux": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.osx": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.v110_xp": "1.1.5",
+          "SQLitePCLRaw.provider.e_sqlite3.net45": "1.1.5"
+        },
+        "compile": {
+          "lib/net45/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/net45/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/net45/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.linux.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x86/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-x86"
+          }
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.osx.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/libe_sqlite3.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win7-x64/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win7-x64"
+          },
+          "runtimes/win7-x86/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win7-x86"
+          }
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.net45/1.1.5": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.5"
+        },
+        "compile": {
+          "lib/net45/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Data.Common/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net451/System.Data.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net451/System.Data.Common.dll": {}
+        }
+      },
+      "System.Memory/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CustomerSystem.Backend/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Autofac": "5.2.0",
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0",
+          "linq2db": "6.0.0-preview.4",
+          "linq2db.Compat": "6.0.0-preview.4",
+          "linq2db.SQLite": "6.0.0-preview.4"
+        },
+        "compile": {
+          "bin/placeholder/CustomerSystem.Backend.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomerSystem.Backend.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win": {
+      "AntdUI/2.0.6": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Design"
+        ],
+        "compile": {
+          "lib/net48/AntdUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/AntdUI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Autofac/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "linq2db/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.Compat/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "linq2db": "6.0.0-preview.4"
+        },
+        "compile": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.SQLite/6.0.0-preview.4": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Async/1.0.168": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.8"
+        },
+        "frameworkAssemblies": [
+          "System.Net"
+        ],
+        "compile": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {
+            "related": ".Desktop.xml;.xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.dll": {
+            "related": ".Extensions.Desktop.xml;.Extensions.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {
+            "related": ".Desktop.xml;.xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.dll": {
+            "related": ".Extensions.Desktop.xml;.Extensions.xml;.xml"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
+      },
+      "Microsoft.Data.Sqlite/2.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "2.0.0-preview1-final",
+          "SQLitePCLRaw.bundle_green": "1.1.5"
+        }
+      },
+      "Microsoft.Data.Sqlite.Core/2.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0-preview1-25301-01",
+          "SQLitePCLRaw.core": "1.1.5",
+          "System.Data.Common": "4.3.0",
+          "System.ValueTuple": "4.3.0"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Packaging.Tools/1.0.0-preview1-25301-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Packaging.Tools.targets": {}
+        }
+      },
+      "NETStandard.Library/2.0.0-preview1-25301-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.Packaging.Tools": "1.0.0-preview1-25301-01"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.5": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.linux": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.osx": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.v110_xp": "1.1.5",
+          "SQLitePCLRaw.provider.e_sqlite3.net45": "1.1.5"
+        },
+        "compile": {
+          "lib/net45/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/net45/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/net45/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.linux.targets": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.osx.targets": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.net45/1.1.5": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.5"
+        },
+        "compile": {
+          "lib/net45/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Data.Common/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net451/System.Data.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net451/System.Data.Common.dll": {}
+        }
+      },
+      "System.Memory/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CustomerSystem.Backend/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Autofac": "5.2.0",
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0",
+          "linq2db": "6.0.0-preview.4",
+          "linq2db.Compat": "6.0.0-preview.4",
+          "linq2db.SQLite": "6.0.0-preview.4"
+        },
+        "compile": {
+          "bin/placeholder/CustomerSystem.Backend.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomerSystem.Backend.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-arm64": {
+      "AntdUI/2.0.6": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Design"
+        ],
+        "compile": {
+          "lib/net48/AntdUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/AntdUI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Autofac/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "linq2db/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.Compat/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "linq2db": "6.0.0-preview.4"
+        },
+        "compile": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.SQLite/6.0.0-preview.4": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Async/1.0.168": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.8"
+        },
+        "frameworkAssemblies": [
+          "System.Net"
+        ],
+        "compile": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {
+            "related": ".Desktop.xml;.xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.dll": {
+            "related": ".Extensions.Desktop.xml;.Extensions.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {
+            "related": ".Desktop.xml;.xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.dll": {
+            "related": ".Extensions.Desktop.xml;.Extensions.xml;.xml"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
+      },
+      "Microsoft.Data.Sqlite/2.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "2.0.0-preview1-final",
+          "SQLitePCLRaw.bundle_green": "1.1.5"
+        }
+      },
+      "Microsoft.Data.Sqlite.Core/2.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0-preview1-25301-01",
+          "SQLitePCLRaw.core": "1.1.5",
+          "System.Data.Common": "4.3.0",
+          "System.ValueTuple": "4.3.0"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Packaging.Tools/1.0.0-preview1-25301-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Packaging.Tools.targets": {}
+        }
+      },
+      "NETStandard.Library/2.0.0-preview1-25301-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.Packaging.Tools": "1.0.0-preview1-25301-01"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.5": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.linux": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.osx": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.v110_xp": "1.1.5",
+          "SQLitePCLRaw.provider.e_sqlite3.net45": "1.1.5"
+        },
+        "compile": {
+          "lib/net45/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/net45/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/net45/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.linux.targets": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.osx.targets": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.net45/1.1.5": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.5"
+        },
+        "compile": {
+          "lib/net45/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Data.Common/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net451/System.Data.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net451/System.Data.Common.dll": {}
+        }
+      },
+      "System.Memory/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CustomerSystem.Backend/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Autofac": "5.2.0",
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0",
+          "linq2db": "6.0.0-preview.4",
+          "linq2db.Compat": "6.0.0-preview.4",
+          "linq2db.SQLite": "6.0.0-preview.4"
+        },
+        "compile": {
+          "bin/placeholder/CustomerSystem.Backend.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomerSystem.Backend.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x64": {
+      "AntdUI/2.0.6": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Design"
+        ],
+        "compile": {
+          "lib/net48/AntdUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/AntdUI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Autofac/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "linq2db/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.Compat/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "linq2db": "6.0.0-preview.4"
+        },
+        "compile": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.SQLite/6.0.0-preview.4": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Async/1.0.168": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.8"
+        },
+        "frameworkAssemblies": [
+          "System.Net"
+        ],
+        "compile": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {
+            "related": ".Desktop.xml;.xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.dll": {
+            "related": ".Extensions.Desktop.xml;.Extensions.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {
+            "related": ".Desktop.xml;.xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.dll": {
+            "related": ".Extensions.Desktop.xml;.Extensions.xml;.xml"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
+      },
+      "Microsoft.Data.Sqlite/2.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "2.0.0-preview1-final",
+          "SQLitePCLRaw.bundle_green": "1.1.5"
+        }
+      },
+      "Microsoft.Data.Sqlite.Core/2.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0-preview1-25301-01",
+          "SQLitePCLRaw.core": "1.1.5",
+          "System.Data.Common": "4.3.0",
+          "System.ValueTuple": "4.3.0"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Packaging.Tools/1.0.0-preview1-25301-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Packaging.Tools.targets": {}
+        }
+      },
+      "NETStandard.Library/2.0.0-preview1-25301-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.Packaging.Tools": "1.0.0-preview1-25301-01"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.5": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.linux": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.osx": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.v110_xp": "1.1.5",
+          "SQLitePCLRaw.provider.e_sqlite3.net45": "1.1.5"
+        },
+        "compile": {
+          "lib/net45/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/net45/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/net45/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.linux.targets": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.osx.targets": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.net45/1.1.5": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.5"
+        },
+        "compile": {
+          "lib/net45/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Data.Common/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net451/System.Data.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net451/System.Data.Common.dll": {}
+        }
+      },
+      "System.Memory/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CustomerSystem.Backend/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Autofac": "5.2.0",
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0",
+          "linq2db": "6.0.0-preview.4",
+          "linq2db.Compat": "6.0.0-preview.4",
+          "linq2db.SQLite": "6.0.0-preview.4"
+        },
+        "compile": {
+          "bin/placeholder/CustomerSystem.Backend.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomerSystem.Backend.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x86": {
+      "AntdUI/2.0.6": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Design"
+        ],
+        "compile": {
+          "lib/net48/AntdUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/AntdUI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Autofac/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "linq2db/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.Compat/6.0.0-preview.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "linq2db": "6.0.0-preview.4"
+        },
+        "compile": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/linq2db.Compat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "linq2db.SQLite/6.0.0-preview.4": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Async/1.0.168": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.8"
+        },
+        "frameworkAssemblies": [
+          "System.Net"
+        ],
+        "compile": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {
+            "related": ".Desktop.xml;.xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.dll": {
+            "related": ".Extensions.Desktop.xml;.Extensions.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {
+            "related": ".Desktop.xml;.xml"
+          },
+          "lib/net40/Microsoft.Threading.Tasks.dll": {
+            "related": ".Extensions.Desktop.xml;.Extensions.xml;.xml"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
+      },
+      "Microsoft.Data.Sqlite/2.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "2.0.0-preview1-final",
+          "SQLitePCLRaw.bundle_green": "1.1.5"
+        }
+      },
+      "Microsoft.Data.Sqlite.Core/2.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0-preview1-25301-01",
+          "SQLitePCLRaw.core": "1.1.5",
+          "System.Data.Common": "4.3.0",
+          "System.ValueTuple": "4.3.0"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Packaging.Tools/1.0.0-preview1-25301-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Packaging.Tools.targets": {}
+        }
+      },
+      "NETStandard.Library/2.0.0-preview1-25301-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.Packaging.Tools": "1.0.0-preview1-25301-01"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.5": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.linux": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.osx": "1.1.5",
+          "SQLitePCLRaw.lib.e_sqlite3.v110_xp": "1.1.5",
+          "SQLitePCLRaw.provider.e_sqlite3.net45": "1.1.5"
+        },
+        "compile": {
+          "lib/net45/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/net45/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/net45/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.linux.targets": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.osx.targets": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.5": {
+        "type": "package",
+        "build": {
+          "build/net35/SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.net45/1.1.5": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.5"
+        },
+        "compile": {
+          "lib/net45/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Data.Common/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net451/System.Data.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net451/System.Data.Common.dll": {}
+        }
+      },
+      "System.Memory/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CustomerSystem.Backend/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Autofac": "5.2.0",
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
+          "System.Configuration.ConfigurationManager": "9.0.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0",
+          "linq2db": "6.0.0-preview.4",
+          "linq2db.Compat": "6.0.0-preview.4",
+          "linq2db.SQLite": "6.0.0-preview.4"
+        },
+        "compile": {
+          "bin/placeholder/CustomerSystem.Backend.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomerSystem.Backend.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AntdUI/2.0.6": {
+      "sha512": "WPg4CEURSsqdmHIhMLRuIv69nzMdlwxcW1rGDHZvmsnv6UEiqwrRMHNftP0hZPCSYWjvfw89xkkVSVeyCnF2pA==",
+      "type": "package",
+      "path": "antdui/2.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "antdui.2.0.6.nupkg.sha512",
+        "antdui.nuspec",
+        "lib/net40/AntdUI.dll",
+        "lib/net40/AntdUI.xml",
+        "lib/net46/AntdUI.dll",
+        "lib/net46/AntdUI.xml",
+        "lib/net48/AntdUI.dll",
+        "lib/net48/AntdUI.xml",
+        "lib/net6.0-windows7.0/AntdUI.dll",
+        "lib/net6.0-windows7.0/AntdUI.xml",
+        "lib/net8.0-windows7.0/AntdUI.dll",
+        "lib/net8.0-windows7.0/AntdUI.xml",
+        "lib/net9.0-windows7.0/AntdUI.dll",
+        "lib/net9.0-windows7.0/AntdUI.xml",
+        "logo.png"
+      ]
+    },
+    "Autofac/5.2.0": {
+      "sha512": "V8dBH0dsv75uDzl7Sw+HkhKDPUw2eXnlMjcSVMH+tLo2s67MpTKGyDj1pDcpR+IF2u4YRs0s3/x7R88YJzIWvg==",
+      "type": "package",
+      "path": "autofac/5.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.5.2.0.nupkg.sha512",
+        "autofac.nuspec",
+        "icon.png",
+        "lib/net461/Autofac.dll",
+        "lib/net461/Autofac.pdb",
+        "lib/net461/Autofac.xml",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.pdb",
+        "lib/netstandard2.0/Autofac.xml",
+        "lib/netstandard2.1/Autofac.dll",
+        "lib/netstandard2.1/Autofac.pdb",
+        "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
+    "linq2db/6.0.0-preview.4": {
+      "sha512": "W68/oB9nIylskn/tXKDb7pFW3APUT50cCmQr4Z62xpDt4E/nTXaJVs4ELiZby/QFyYKAxUtSAUiQ+NyIb2sIGA==",
+      "type": "package",
+      "path": "linq2db/6.0.0-preview.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "MIT-LICENSE.txt",
+        "README.md",
+        "images/icon.png",
+        "lib/net462/linq2db.dll",
+        "lib/net462/linq2db.xml",
+        "lib/net6.0/linq2db.dll",
+        "lib/net6.0/linq2db.xml",
+        "lib/net8.0/linq2db.dll",
+        "lib/net8.0/linq2db.xml",
+        "lib/net9.0/linq2db.dll",
+        "lib/net9.0/linq2db.xml",
+        "lib/netstandard2.0/linq2db.dll",
+        "lib/netstandard2.0/linq2db.xml",
+        "linq2db.6.0.0-preview.4.nupkg.sha512",
+        "linq2db.nuspec"
+      ]
+    },
+    "linq2db.Compat/6.0.0-preview.4": {
+      "sha512": "PM6x17d96i0u7StaxiOJwEmwuD+Vmzrr5oTxXXd+Gee5kApaXklSMnYmBeoDLFfpT5CouEAlr42BEKXvSogFEA==",
+      "type": "package",
+      "path": "linq2db.compat/6.0.0-preview.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "MIT-LICENSE.txt",
+        "README.md",
+        "images/icon.png",
+        "lib/net462/linq2db.Compat.dll",
+        "lib/net462/linq2db.Compat.xml",
+        "lib/net6.0/linq2db.Compat.dll",
+        "lib/net6.0/linq2db.Compat.xml",
+        "lib/net8.0/linq2db.Compat.dll",
+        "lib/net8.0/linq2db.Compat.xml",
+        "lib/net9.0/linq2db.Compat.dll",
+        "lib/net9.0/linq2db.Compat.xml",
+        "lib/netstandard2.0/linq2db.Compat.dll",
+        "lib/netstandard2.0/linq2db.Compat.xml",
+        "linq2db.compat.6.0.0-preview.4.nupkg.sha512",
+        "linq2db.compat.nuspec"
+      ]
+    },
+    "linq2db.SQLite/6.0.0-preview.4": {
+      "sha512": "Eh1EqFlB97oHmAbV9Y1Cwk5HA3+Qm0gJPTjaDzCurGDPAUm8qVkC8TBLe7qMbaktuS6M9i5bPQbSjjRbeSFy1A==",
+      "type": "package",
+      "path": "linq2db.sqlite/6.0.0-preview.4",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "MIT-LICENSE.txt",
+        "README.md",
+        "build/linq2db.SQLite.props",
+        "content/LinqToDB.Templates/CopyMe.SQLite.tt.txt",
+        "content/LinqToDB.Templates/DataAnnotations.ttinclude",
+        "content/LinqToDB.Templates/DataModel.ttinclude",
+        "content/LinqToDB.Templates/EditableObject.ttinclude",
+        "content/LinqToDB.Templates/Equatable.ttinclude",
+        "content/LinqToDB.Templates/Humanizer.ttinclude",
+        "content/LinqToDB.Templates/LinqToDB.SQLite.Tools.ttinclude",
+        "content/LinqToDB.Templates/LinqToDB.SQLite.ttinclude",
+        "content/LinqToDB.Templates/LinqToDB.Tools.ttinclude",
+        "content/LinqToDB.Templates/LinqToDB.ttinclude",
+        "content/LinqToDB.Templates/MultipleFiles.ttinclude",
+        "content/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude",
+        "content/LinqToDB.Templates/NotifyPropertyChanged.ttinclude",
+        "content/LinqToDB.Templates/ObsoleteAttributes.ttinclude",
+        "content/LinqToDB.Templates/PluralizationService.ttinclude",
+        "content/LinqToDB.Templates/README.md",
+        "content/LinqToDB.Templates/T4Model.ttinclude",
+        "content/LinqToDB.Templates/Validation.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/CopyMe.SQLite.tt.txt",
+        "contentFiles/any/any/LinqToDB.Templates/DataAnnotations.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/DataModel.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/EditableObject.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/Equatable.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/Humanizer.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.Tools.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/LinqToDB.SQLite.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/LinqToDB.Tools.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/LinqToDB.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/MultipleFiles.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/NotifyPropertyChanged.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/ObsoleteAttributes.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/PluralizationService.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/README.md",
+        "contentFiles/any/any/LinqToDB.Templates/T4Model.ttinclude",
+        "contentFiles/any/any/LinqToDB.Templates/Validation.ttinclude",
+        "images/icon.png",
+        "linq2db.sqlite.6.0.0-preview.4.nupkg.sha512",
+        "linq2db.sqlite.nuspec",
+        "readme.txt",
+        "tools/Humanizer.dll",
+        "tools/Microsoft.Bcl.AsyncInterfaces.dll",
+        "tools/System.Data.SQLite.dll",
+        "tools/linq2db.Scaffold.dll",
+        "tools/linq2db.Tools.dll",
+        "tools/linq2db.dll",
+        "tools/x64/SQLite.Interop.dll",
+        "tools/x86/SQLite.Interop.dll"
+      ]
+    },
+    "Microsoft.Bcl/1.1.8": {
+      "sha512": "gM+PUzd8ONxJpcPJeNppCJPklDhDuPUMVQkxvK4fe0rd9WyqBNPh4+UFx3Uv8zuG4C1Gapu1c25sfotE7TQtig==",
+      "type": "package",
+      "path": "microsoft.bcl/1.1.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "content/net45/_._",
+        "content/portable-net45+win8+wp8+wpa81/_._",
+        "content/portable-net45+win8+wpa81/_._",
+        "content/portable-net451+win81+wpa81/_._",
+        "content/portable-net451+win81/_._",
+        "content/portable-win81+wp81+wpa81/_._",
+        "content/sl4/_._",
+        "content/sl5/_._",
+        "content/win8/_._",
+        "content/wp8/_._",
+        "content/wpa81/_._",
+        "lib/net40/System.IO.dll",
+        "lib/net40/System.IO.xml",
+        "lib/net40/System.Runtime.dll",
+        "lib/net40/System.Runtime.xml",
+        "lib/net40/System.Threading.Tasks.dll",
+        "lib/net40/System.Threading.Tasks.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/_._",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8/System.IO.dll",
+        "lib/portable-net40+sl4+win8/System.IO.xml",
+        "lib/portable-net40+sl4+win8/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8/ensureRedirect.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8/System.IO.dll",
+        "lib/portable-net40+win8/System.IO.xml",
+        "lib/portable-net40+win8/System.Runtime.dll",
+        "lib/portable-net40+win8/System.Runtime.xml",
+        "lib/portable-net40+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8/ensureRedirect.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/portable-net451+win81+wpa81/_._",
+        "lib/portable-net451+win81/_._",
+        "lib/portable-win81+wp81+wpa81/_._",
+        "lib/sl4-windowsphone71/System.IO.dll",
+        "lib/sl4-windowsphone71/System.IO.xml",
+        "lib/sl4-windowsphone71/System.Runtime.dll",
+        "lib/sl4-windowsphone71/System.Runtime.xml",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.dll",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.xml",
+        "lib/sl4-windowsphone71/ensureRedirect.xml",
+        "lib/sl4/System.IO.dll",
+        "lib/sl4/System.IO.xml",
+        "lib/sl4/System.Runtime.dll",
+        "lib/sl4/System.Runtime.xml",
+        "lib/sl4/System.Threading.Tasks.dll",
+        "lib/sl4/System.Threading.Tasks.xml",
+        "lib/sl5/System.IO.dll",
+        "lib/sl5/System.IO.xml",
+        "lib/sl5/System.Runtime.dll",
+        "lib/sl5/System.Runtime.xml",
+        "lib/sl5/System.Threading.Tasks.dll",
+        "lib/sl5/System.Threading.Tasks.xml",
+        "lib/win8/_._",
+        "lib/wp8/_._",
+        "lib/wpa81/_._",
+        "microsoft.bcl.1.1.8.nupkg.sha512",
+        "microsoft.bcl.nuspec"
+      ]
+    },
+    "Microsoft.Bcl.Async/1.0.168": {
+      "sha512": "tUNC02eBwDKpGre0BcNIvblLv1q0Q3DnS/vtkRHj2FE1sXwt386HAudztyl5C0U88hllrqHDvtlz8bK0Y8cHDA==",
+      "type": "package",
+      "path": "microsoft.bcl.async/1.0.168",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll",
+        "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.xml",
+        "lib/net40/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/net40/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/net40/Microsoft.Threading.Tasks.dll",
+        "lib/net40/Microsoft.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.xml",
+        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.dll",
+        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.xml",
+        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.Phone.dll",
+        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.Phone.xml",
+        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.dll",
+        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.xml",
+        "lib/sl4/Microsoft.Threading.Tasks.Extensions.Silverlight.dll",
+        "lib/sl4/Microsoft.Threading.Tasks.Extensions.Silverlight.xml",
+        "lib/sl4/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/sl4/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/sl4/Microsoft.Threading.Tasks.dll",
+        "lib/sl4/Microsoft.Threading.Tasks.xml",
+        "lib/win8/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/win8/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/win8/Microsoft.Threading.Tasks.dll",
+        "lib/win8/Microsoft.Threading.Tasks.xml",
+        "lib/wp8/Microsoft.Threading.Tasks.Extensions.Phone.dll",
+        "lib/wp8/Microsoft.Threading.Tasks.Extensions.Phone.xml",
+        "lib/wp8/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/wp8/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/wp8/Microsoft.Threading.Tasks.dll",
+        "lib/wp8/Microsoft.Threading.Tasks.xml",
+        "lib/wpa81/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/wpa81/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/wpa81/Microsoft.Threading.Tasks.dll",
+        "lib/wpa81/Microsoft.Threading.Tasks.xml",
+        "microsoft.bcl.async.1.0.168.nupkg.sha512",
+        "microsoft.bcl.async.nuspec"
+      ]
+    },
+    "Microsoft.Bcl.AsyncInterfaces/9.0.1": {
+      "sha512": "IVkmUqf+KzbuXKrxi2tyQlg11RArYk26t2eU5cHekff+7Ao09vH8vt8idC0BJSMnpiRV2OK66zM2EwJU6Tm5Cw==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Bcl.AsyncInterfaces.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Bcl.AsyncInterfaces.targets",
+        "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net462/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.9.0.1.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Bcl.Build/1.0.14": {
+      "sha512": "cDLKSvNvRa519hplsbSoYqO69TjdDIhfjtKUM0g20/nVROoWsGav9KCI9HtnGjLmdV1+TcUUDhbotcllibjPEA==",
+      "type": "package",
+      "path": "microsoft.bcl.build/1.0.14",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "content/net40/_._",
+        "content/netcore45/_._",
+        "content/portable-net40+win8+sl4+wp71+wpa81/_._",
+        "content/sl4-windowsphone71/_._",
+        "content/sl4/_._",
+        "microsoft.bcl.build.1.0.14.nupkg.sha512",
+        "microsoft.bcl.build.nuspec",
+        "tools/Install.ps1",
+        "tools/Microsoft.Bcl.Build.Tasks.dll",
+        "tools/Microsoft.Bcl.Build.targets",
+        "tools/Uninstall.ps1"
+      ]
+    },
+    "Microsoft.Data.Sqlite/2.0.0-preview1-final": {
+      "sha512": "VKtWnZN0fWuJvKoNe9Ly/upn7Pig3cEu1TUYT9gmCzXZORIATVul4zdDdYO0Xa9Dhl1Hg3IYpwYtNQ28gmaaRw==",
+      "type": "package",
+      "path": "microsoft.data.sqlite/2.0.0-preview1-final",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "microsoft.data.sqlite.2.0.0-preview1-final.nupkg.sha512",
+        "microsoft.data.sqlite.nuspec"
+      ]
+    },
+    "Microsoft.Data.Sqlite.Core/2.0.0-preview1-final": {
+      "sha512": "5/7YaLZZUcu9Gk3Dvh67ylV7QYggm6X0n7PEMy/5DXK7EjX46fH417fUwiQk9/DoNO+MJM/RQ+MTKur6FooiNg==",
+      "type": "package",
+      "path": "microsoft.data.sqlite.core/2.0.0-preview1-final",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/Microsoft.Data.Sqlite.dll",
+        "lib/net451/Microsoft.Data.Sqlite.xml",
+        "lib/netstandard1.2/Microsoft.Data.Sqlite.dll",
+        "lib/netstandard1.2/Microsoft.Data.Sqlite.xml",
+        "microsoft.data.sqlite.core.2.0.0-preview1-final.nupkg.sha512",
+        "microsoft.data.sqlite.core.nuspec"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json"
+      ]
+    },
+    "Microsoft.Packaging.Tools/1.0.0-preview1-25301-01": {
+      "sha512": "i0gGYp5lCB3NVx3FglfIXsRZ0kld4e+Wr++svzMOB1g21mos0yOFmohLujdb/HqkjaJfENdH5/CCV5rfhb2RWw==",
+      "type": "package",
+      "path": "microsoft.packaging.tools/1.0.0-preview1-25301-01",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "build/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/Microsoft.Extensions.DependencyModel.dll",
+        "build/Microsoft.Packaging.Tools.Tasks.dll",
+        "build/Microsoft.Packaging.Tools.Trimming.targets",
+        "build/Microsoft.Packaging.Tools.targets",
+        "build/Newtonsoft.Json.dll",
+        "build/System.Collections.Immutable.dll",
+        "build/System.Reflection.Metadata.dll",
+        "build/desktop/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/desktop/Microsoft.Extensions.DependencyModel.dll",
+        "build/desktop/Microsoft.Packaging.Tools.Tasks.dll",
+        "build/desktop/Newtonsoft.Json.dll",
+        "build/desktop/System.Collections.Immutable.dll",
+        "build/desktop/System.Reflection.Metadata.dll",
+        "dotnet_library_license.txt",
+        "microsoft.packaging.tools.1.0.0-preview1-25301-01.nupkg.sha512",
+        "microsoft.packaging.tools.nuspec"
+      ]
+    },
+    "NETStandard.Library/2.0.0-preview1-25301-01": {
+      "sha512": "JgI5IsPMAkYqYeahc+T1G20qqE2qu/P0ZyW2GUPUxxfiT2nQGNDDPq9KHCPUODA3AMSHOp1Vnp6Sxa6jgVYfkg==",
+      "type": "package",
+      "path": "netstandard.library/2.0.0-preview1-25301-01",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "build/NETStandard.Library.targets",
+        "build/netstandard2.0/NETStandard.Library.targets",
+        "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
+        "build/netstandard2.0/ref/System.AppContext.dll",
+        "build/netstandard2.0/ref/System.Collections.Concurrent.dll",
+        "build/netstandard2.0/ref/System.Collections.NonGeneric.dll",
+        "build/netstandard2.0/ref/System.Collections.Specialized.dll",
+        "build/netstandard2.0/ref/System.Collections.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Composition.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.EventBasedAsync.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Primitives.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.TypeConverter.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.dll",
+        "build/netstandard2.0/ref/System.Console.dll",
+        "build/netstandard2.0/ref/System.Core.dll",
+        "build/netstandard2.0/ref/System.Data.Common.dll",
+        "build/netstandard2.0/ref/System.Data.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Contracts.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Debug.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.FileVersionInfo.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Process.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.StackTrace.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TextWriterTraceListener.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tools.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TraceSource.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tracing.dll",
+        "build/netstandard2.0/ref/System.Drawing.Primitives.dll",
+        "build/netstandard2.0/ref/System.Drawing.dll",
+        "build/netstandard2.0/ref/System.Dynamic.Runtime.dll",
+        "build/netstandard2.0/ref/System.Globalization.Calendars.dll",
+        "build/netstandard2.0/ref/System.Globalization.Extensions.dll",
+        "build/netstandard2.0/ref/System.Globalization.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.ZipFile.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.DriveInfo.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Primitives.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Watcher.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.IsolatedStorage.dll",
+        "build/netstandard2.0/ref/System.IO.MemoryMappedFiles.dll",
+        "build/netstandard2.0/ref/System.IO.Pipes.dll",
+        "build/netstandard2.0/ref/System.IO.UnmanagedMemoryStream.dll",
+        "build/netstandard2.0/ref/System.IO.dll",
+        "build/netstandard2.0/ref/System.Linq.Expressions.dll",
+        "build/netstandard2.0/ref/System.Linq.Parallel.dll",
+        "build/netstandard2.0/ref/System.Linq.Queryable.dll",
+        "build/netstandard2.0/ref/System.Linq.dll",
+        "build/netstandard2.0/ref/System.Net.Http.dll",
+        "build/netstandard2.0/ref/System.Net.NameResolution.dll",
+        "build/netstandard2.0/ref/System.Net.NetworkInformation.dll",
+        "build/netstandard2.0/ref/System.Net.Ping.dll",
+        "build/netstandard2.0/ref/System.Net.Primitives.dll",
+        "build/netstandard2.0/ref/System.Net.Requests.dll",
+        "build/netstandard2.0/ref/System.Net.Security.dll",
+        "build/netstandard2.0/ref/System.Net.Sockets.dll",
+        "build/netstandard2.0/ref/System.Net.WebHeaderCollection.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.Client.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.dll",
+        "build/netstandard2.0/ref/System.Net.dll",
+        "build/netstandard2.0/ref/System.Numerics.dll",
+        "build/netstandard2.0/ref/System.ObjectModel.dll",
+        "build/netstandard2.0/ref/System.Reflection.Extensions.dll",
+        "build/netstandard2.0/ref/System.Reflection.Primitives.dll",
+        "build/netstandard2.0/ref/System.Reflection.dll",
+        "build/netstandard2.0/ref/System.Resources.Reader.dll",
+        "build/netstandard2.0/ref/System.Resources.ResourceManager.dll",
+        "build/netstandard2.0/ref/System.Resources.Writer.dll",
+        "build/netstandard2.0/ref/System.Runtime.CompilerServices.VisualC.dll",
+        "build/netstandard2.0/ref/System.Runtime.Extensions.dll",
+        "build/netstandard2.0/ref/System.Runtime.Handles.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.dll",
+        "build/netstandard2.0/ref/System.Runtime.Numerics.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Formatters.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Json.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Primitives.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Xml.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.dll",
+        "build/netstandard2.0/ref/System.Runtime.dll",
+        "build/netstandard2.0/ref/System.Security.Claims.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Algorithms.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Csp.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Encoding.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Primitives.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.X509Certificates.dll",
+        "build/netstandard2.0/ref/System.Security.Principal.dll",
+        "build/netstandard2.0/ref/System.Security.SecureString.dll",
+        "build/netstandard2.0/ref/System.ServiceModel.Web.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.Extensions.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.dll",
+        "build/netstandard2.0/ref/System.Text.RegularExpressions.dll",
+        "build/netstandard2.0/ref/System.Threading.Overlapped.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.Parallel.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.dll",
+        "build/netstandard2.0/ref/System.Threading.Thread.dll",
+        "build/netstandard2.0/ref/System.Threading.ThreadPool.dll",
+        "build/netstandard2.0/ref/System.Threading.Timer.dll",
+        "build/netstandard2.0/ref/System.Threading.dll",
+        "build/netstandard2.0/ref/System.Transactions.dll",
+        "build/netstandard2.0/ref/System.ValueTuple.dll",
+        "build/netstandard2.0/ref/System.Web.dll",
+        "build/netstandard2.0/ref/System.Windows.dll",
+        "build/netstandard2.0/ref/System.Xml.Linq.dll",
+        "build/netstandard2.0/ref/System.Xml.ReaderWriter.dll",
+        "build/netstandard2.0/ref/System.Xml.Serialization.dll",
+        "build/netstandard2.0/ref/System.Xml.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlSerializer.dll",
+        "build/netstandard2.0/ref/System.Xml.dll",
+        "build/netstandard2.0/ref/System.dll",
+        "build/netstandard2.0/ref/mscorlib.dll",
+        "build/netstandard2.0/ref/netstandard.dll",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "netstandard.library.2.0.0-preview1-25301-01.nupkg.sha512",
+        "netstandard.library.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.bundle_green/1.1.5": {
+      "sha512": "rz+SPgp57CAWkEfCJmWqHXMd+fSqhgYmzOdjkSbCQ3OEG0I3+vUlycElvy5zTi0GAYg5pVrmRqbquotS0985CQ==",
+      "type": "package",
+      "path": "sqlitepclraw.bundle_green/1.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/wp8/SQLitePCLRaw.bundle_green.targets",
+        "build/wp80/arm/SQLitePCLRaw.batteries_green.dll",
+        "build/wp80/arm/SQLitePCLRaw.batteries_v2.dll",
+        "build/wp80/x86/SQLitePCLRaw.batteries_green.dll",
+        "build/wp80/x86/SQLitePCLRaw.batteries_v2.dll",
+        "lib/MonoAndroid/SQLitePCLRaw.batteries_green.dll",
+        "lib/MonoAndroid/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_green.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net35/SQLitePCLRaw.batteries_green.dll",
+        "lib/net35/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net40/SQLitePCLRaw.batteries_green.dll",
+        "lib/net40/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net45/SQLitePCLRaw.batteries_green.dll",
+        "lib/net45/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_green.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/uap10.0/SQLitePCLRaw.batteries_green.dll",
+        "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/win8/SQLitePCLRaw.batteries_green.dll",
+        "lib/win8/SQLitePCLRaw.batteries_v2.dll",
+        "lib/win81/SQLitePCLRaw.batteries_green.dll",
+        "lib/win81/SQLitePCLRaw.batteries_v2.dll",
+        "lib/wp8/_._",
+        "lib/wpa81/SQLitePCLRaw.batteries_green.dll",
+        "lib/wpa81/SQLitePCLRaw.batteries_v2.dll",
+        "sqlitepclraw.bundle_green.1.1.5.nupkg.sha512",
+        "sqlitepclraw.bundle_green.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.core/1.1.5": {
+      "sha512": "NViT1KDYnPAQo7yoYmkAMWzT15ZjqbLTSZp9iTVwZDz7fBC5fQ9TYebOFUIxYxrD/RvBpYB8m9PtcL8x/QbKNg==",
+      "type": "package",
+      "path": "sqlitepclraw.core/1.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/SQLitePCLRaw.core.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.core.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/net35/SQLitePCLRaw.core.dll",
+        "lib/net40/SQLitePCLRaw.core.dll",
+        "lib/net45/SQLitePCLRaw.core.dll",
+        "lib/netstandard1.0/SQLitePCLRaw.core.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.core.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/uap10.0/SQLitePCLRaw.core.dll",
+        "lib/win8/SQLitePCLRaw.core.dll",
+        "lib/win81/SQLitePCLRaw.core.dll",
+        "lib/wpa81/SQLitePCLRaw.core.dll",
+        "sqlitepclraw.core.1.1.5.nupkg.sha512",
+        "sqlitepclraw.core.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.5": {
+      "sha512": "BGAQOGc5/7IRTBloTs3aGKsFOQv0etSxKilvz1UirXlgOybykDw1HskJXPs4Ht6OTbREawz9j041s2SEjrEZBQ==",
+      "type": "package",
+      "path": "sqlitepclraw.lib.e_sqlite3.linux/1.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net35/SQLitePCLRaw.lib.e_sqlite3.linux.targets",
+        "runtimes/linux-x64/native/libe_sqlite3.so",
+        "runtimes/linux-x86/native/libe_sqlite3.so",
+        "sqlitepclraw.lib.e_sqlite3.linux.1.1.5.nupkg.sha512",
+        "sqlitepclraw.lib.e_sqlite3.linux.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.5": {
+      "sha512": "27t5aO67pR9i0Sndn0s1FQebym9qhNgQqoVxohHYohQhvjrLITvJh4OdCRpiLf9E5EwLN2cmTVdO90QjgimOPw==",
+      "type": "package",
+      "path": "sqlitepclraw.lib.e_sqlite3.osx/1.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net35/SQLitePCLRaw.lib.e_sqlite3.osx.targets",
+        "runtimes/osx-x64/native/libe_sqlite3.dylib",
+        "sqlitepclraw.lib.e_sqlite3.osx.1.1.5.nupkg.sha512",
+        "sqlitepclraw.lib.e_sqlite3.osx.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.5": {
+      "sha512": "3vMfR0vZGjGVDiS262X91NGD6yKneRem22AHV45qJr68/797ghXWVQjbGYPk9uBalZglBkaeOUXvo8fAdM+BqQ==",
+      "type": "package",
+      "path": "sqlitepclraw.lib.e_sqlite3.v110_xp/1.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net35/SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets",
+        "runtimes/win7-x64/native/e_sqlite3.dll",
+        "runtimes/win7-x86/native/e_sqlite3.dll",
+        "sqlitepclraw.lib.e_sqlite3.v110_xp.1.1.5.nupkg.sha512",
+        "sqlitepclraw.lib.e_sqlite3.v110_xp.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.provider.e_sqlite3.net45/1.1.5": {
+      "sha512": "997HqWFjdItUGuhb/HumrrCjFHadVkh81rWF3Fh4N2ANE/GUYuRtccA7UNqhJShizZVTKANQh3cgw1/eqqjNxQ==",
+      "type": "package",
+      "path": "sqlitepclraw.provider.e_sqlite3.net45/1.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "sqlitepclraw.provider.e_sqlite3.net45.1.1.5.nupkg.sha512",
+        "sqlitepclraw.provider.e_sqlite3.net45.nuspec"
+      ]
+    },
+    "System.Buffers/4.4.0": {
+      "sha512": "AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+      "type": "package",
+      "path": "system.buffers/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "system.buffers.4.4.0.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Configuration.ConfigurationManager/9.0.1": {
+      "sha512": "ntDQ+3A7vGq6jnv3KI8nv1Tfgmos9TG863xd/5tmms6LqrIxEze1RLuA3JB/AcpXMUSO70DXzXfPnJD2ZHFX0Q==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
+        "lib/net462/System.Configuration.ConfigurationManager.dll",
+        "lib/net462/System.Configuration.ConfigurationManager.xml",
+        "lib/net8.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net8.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net9.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net9.0/System.Configuration.ConfigurationManager.xml",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.9.0.1.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Data.Common/4.3.0": {
+      "sha512": "lm6E3T5u7BOuEH0u18JpbJHxBfOJPuCyl4Kg1RH10ktYLp5uEEE1xKrHW56/We4SnZpGAuCc9N0MJpSDhTHZGQ==",
+      "type": "package",
+      "path": "system.data.common/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net451/System.Data.Common.dll",
+        "lib/netstandard1.2/System.Data.Common.dll",
+        "lib/portable-net451+win8+wp8+wpa81/System.Data.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net451/System.Data.Common.dll",
+        "ref/netstandard1.2/System.Data.Common.dll",
+        "ref/netstandard1.2/System.Data.Common.xml",
+        "ref/netstandard1.2/de/System.Data.Common.xml",
+        "ref/netstandard1.2/es/System.Data.Common.xml",
+        "ref/netstandard1.2/fr/System.Data.Common.xml",
+        "ref/netstandard1.2/it/System.Data.Common.xml",
+        "ref/netstandard1.2/ja/System.Data.Common.xml",
+        "ref/netstandard1.2/ko/System.Data.Common.xml",
+        "ref/netstandard1.2/ru/System.Data.Common.xml",
+        "ref/netstandard1.2/zh-hans/System.Data.Common.xml",
+        "ref/netstandard1.2/zh-hant/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/System.Data.Common.dll",
+        "ref/portable-net451+win8+wp8+wpa81/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/de/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/es/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/fr/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/it/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/ja/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/ko/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/ru/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/zh-hans/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/zh-hant/System.Data.Common.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.data.common.4.3.0.nupkg.sha512",
+        "system.data.common.nuspec"
+      ]
+    },
+    "System.Memory/4.5.3": {
+      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "type": "package",
+      "path": "system.memory/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.3.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.4.0": {
+      "sha512": "UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.4.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+      "sha512": "3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Threading.Tasks.Extensions.dll",
+        "lib/net461/System.Threading.Tasks.Extensions.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "CustomerSystem.Backend/1.0.0": {
+      "type": "project",
+      "path": "../CustomerSystem.Backend/CustomerSystem.Backend.csproj",
+      "msbuildProject": "../CustomerSystem.Backend/CustomerSystem.Backend.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "AntdUI >= 2.0.6",
+      "Autofac >= 5.2.0",
+      "CustomerSystem.Backend >= 1.0.0",
+      "Microsoft.Bcl >= 1.1.8",
+      "Microsoft.Bcl.Async >= 1.0.168",
+      "Microsoft.Bcl.AsyncInterfaces >= 9.0.1",
+      "Microsoft.Bcl.Build >= 1.0.14",
+      "Microsoft.Data.Sqlite >= 2.0.0-preview1-final",
+      "Microsoft.Data.Sqlite.Core >= 2.0.0-preview1-final",
+      "Microsoft.NETCore.Platforms >= 1.1.0",
+      "Microsoft.Packaging.Tools >= 1.0.0-preview1-25301-01",
+      "NETStandard.Library >= 2.0.0-preview1-25301-01",
+      "SQLitePCLRaw.bundle_green >= 1.1.5",
+      "SQLitePCLRaw.core >= 1.1.5",
+      "SQLitePCLRaw.lib.e_sqlite3.linux >= 1.1.5",
+      "SQLitePCLRaw.lib.e_sqlite3.osx >= 1.1.5",
+      "SQLitePCLRaw.lib.e_sqlite3.v110_xp >= 1.1.5",
+      "SQLitePCLRaw.provider.e_sqlite3.net45 >= 1.1.5",
+      "System.Buffers >= 4.4.0",
+      "System.Configuration.ConfigurationManager >= 9.0.1",
+      "System.Data.Common >= 4.3.0",
+      "System.Memory >= 4.5.3",
+      "System.Numerics.Vectors >= 4.4.0",
+      "System.Runtime.CompilerServices.Unsafe >= 4.5.3",
+      "System.Threading.Tasks.Extensions >= 4.5.4",
+      "System.ValueTuple >= 4.5.0",
+      "linq2db >= 6.0.0-preview.4",
+      "linq2db.Compat >= 6.0.0-preview.4"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\dfz\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.UI\\CustomerSystem.UI.csproj",
+      "projectName": "CustomerSystem.UI",
+      "projectPath": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.UI\\CustomerSystem.UI.csproj",
+      "packagesPath": "C:\\Users\\dfz\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.UI\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "UsingMicrosoftNETSdk": false,
+      "configFilePaths": [
+        "C:\\Users\\dfz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "projectReferences": {
+            "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.Backend\\CustomerSystem.Backend.csproj": {
+              "projectPath": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.Backend\\CustomerSystem.Backend.csproj"
+            }
+          }
+        }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "dependencies": {
+          "AntdUI": {
+            "target": "Package",
+            "version": "[2.0.6, )"
+          },
+          "Autofac": {
+            "target": "Package",
+            "version": "[5.2.0, )"
+          },
+          "Microsoft.Bcl": {
+            "target": "Package",
+            "version": "[1.1.8, )"
+          },
+          "Microsoft.Bcl.Async": {
+            "target": "Package",
+            "version": "[1.0.168, )"
+          },
+          "Microsoft.Bcl.AsyncInterfaces": {
+            "target": "Package",
+            "version": "[9.0.1, )"
+          },
+          "Microsoft.Bcl.Build": {
+            "target": "Package",
+            "version": "[1.0.14, )"
+          },
+          "Microsoft.Data.Sqlite": {
+            "target": "Package",
+            "version": "[2.0.0-preview1-final, )"
+          },
+          "Microsoft.Data.Sqlite.Core": {
+            "target": "Package",
+            "version": "[2.0.0-preview1-final, )"
+          },
+          "Microsoft.NETCore.Platforms": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          },
+          "Microsoft.Packaging.Tools": {
+            "target": "Package",
+            "version": "[1.0.0-preview1-25301-01, )"
+          },
+          "NETStandard.Library": {
+            "target": "Package",
+            "version": "[2.0.0-preview1-25301-01, )"
+          },
+          "SQLitePCLRaw.bundle_green": {
+            "target": "Package",
+            "version": "[1.1.5, )"
+          },
+          "SQLitePCLRaw.core": {
+            "target": "Package",
+            "version": "[1.1.5, )"
+          },
+          "SQLitePCLRaw.lib.e_sqlite3.linux": {
+            "target": "Package",
+            "version": "[1.1.5, )"
+          },
+          "SQLitePCLRaw.lib.e_sqlite3.osx": {
+            "target": "Package",
+            "version": "[1.1.5, )"
+          },
+          "SQLitePCLRaw.lib.e_sqlite3.v110_xp": {
+            "target": "Package",
+            "version": "[1.1.5, )"
+          },
+          "SQLitePCLRaw.provider.e_sqlite3.net45": {
+            "target": "Package",
+            "version": "[1.1.5, )"
+          },
+          "System.Buffers": {
+            "target": "Package",
+            "version": "[4.4.0, )"
+          },
+          "System.Configuration.ConfigurationManager": {
+            "target": "Package",
+            "version": "[9.0.1, )"
+          },
+          "System.Data.Common": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "System.Memory": {
+            "target": "Package",
+            "version": "[4.5.3, )"
+          },
+          "System.Numerics.Vectors": {
+            "target": "Package",
+            "version": "[4.4.0, )"
+          },
+          "System.Runtime.CompilerServices.Unsafe": {
+            "target": "Package",
+            "version": "[4.5.3, )"
+          },
+          "System.Threading.Tasks.Extensions": {
+            "target": "Package",
+            "version": "[4.5.4, )"
+          },
+          "System.ValueTuple": {
+            "target": "Package",
+            "version": "[4.5.0, )"
+          },
+          "linq2db": {
+            "target": "Package",
+            "version": "[6.0.0-preview.4, )"
+          },
+          "linq2db.Compat": {
+            "target": "Package",
+            "version": "[6.0.0-preview.4, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+E:\Projects\DotnetCustomerSystemDemo\CustomerSystem.Build\bin\Debug\CustomerSystem.Build.dll
+E:\Projects\DotnetCustomerSystemDemo\CustomerSystem.Build\bin\Debug\CustomerSystem.Build.pdb
+E:\Projects\DotnetCustomerSystemDemo\CustomerSystem.Build\obj\Debug\CustomerSystem.Build.csproj.AssemblyReference.cache
+E:\Projects\DotnetCustomerSystemDemo\CustomerSystem.Build\obj\Debug\CustomerSystem.Build.csproj.CoreCompileInputs.cache
+E:\Projects\DotnetCustomerSystemDemo\CustomerSystem.Build\obj\Debug\CustomerSystem.Build.dll
+E:\Projects\DotnetCustomerSystemDemo\CustomerSystem.Build\obj\Debug\CustomerSystem.Build.pdb

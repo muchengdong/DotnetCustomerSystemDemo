@@ -1,16 +1,18 @@
-using System;
-using System.Windows.Forms;
-using System.Drawing;
 using System.ComponentModel;
+using System.Windows.Forms;
 using System.Windows.Forms.Design;
+using Panel = AntdUI.Panel;
 
 namespace CustomerSystem.UI.Views {
     [Designer(typeof(MyUserControlDesigner))] // 指定自定义设计器
     public partial class UserControl1 : UserControl {
-        public AntdUI.Panel HeaderPanel { get => panel1; set => panel1 = value; }
-
         public UserControl1() {
             InitializeComponent();
+        }
+
+        public Panel HeaderPanel {
+            get => panel1;
+            set => panel1 = value;
         }
     }
 
@@ -20,10 +22,9 @@ namespace CustomerSystem.UI.Views {
             base.Initialize(component);
 
             var userControl = component as UserControl1;
-            if (userControl != null) {
+            if (userControl != null)
                 // 启用设计时的面板支持
-                this.EnableDesignMode(userControl.HeaderPanel, "HeaderPanel");
-            }
+                EnableDesignMode(userControl.HeaderPanel, "HeaderPanel");
         }
 
         // // 禁止调整控件大小

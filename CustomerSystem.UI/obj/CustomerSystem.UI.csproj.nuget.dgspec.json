@@ -1,0 +1,260 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.UI\\CustomerSystem.UI.csproj": {}
+  },
+  "projects": {
+    "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.Backend\\CustomerSystem.Backend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.Backend\\CustomerSystem.Backend.csproj",
+        "projectName": "CustomerSystem.Backend",
+        "projectPath": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.Backend\\CustomerSystem.Backend.csproj",
+        "packagesPath": "C:\\Users\\dfz\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.Backend\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\dfz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "System.Runtime.CompilerServices.Unsafe": {
+              "target": "Package",
+              "version": "[4.5.3, )"
+            },
+            "System.Threading.Tasks.Extensions": {
+              "target": "Package",
+              "version": "[4.5.4, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "linq2db": {
+              "target": "Package",
+              "version": "[6.0.0-preview.4, )"
+            },
+            "linq2db.Compat": {
+              "target": "Package",
+              "version": "[6.0.0-preview.4, )"
+            },
+            "linq2db.SQLite": {
+              "target": "Package",
+              "version": "[6.0.0-preview.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.UI\\CustomerSystem.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.UI\\CustomerSystem.UI.csproj",
+        "projectName": "CustomerSystem.UI",
+        "projectPath": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.UI\\CustomerSystem.UI.csproj",
+        "packagesPath": "C:\\Users\\dfz\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.UI\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\dfz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.Backend\\CustomerSystem.Backend.csproj": {
+                "projectPath": "E:\\Projects\\DotnetCustomerSystemDemo\\CustomerSystem.Backend\\CustomerSystem.Backend.csproj"
+              }
+            }
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "AntdUI": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Microsoft.Bcl": {
+              "target": "Package",
+              "version": "[1.1.8, )"
+            },
+            "Microsoft.Bcl.Async": {
+              "target": "Package",
+              "version": "[1.0.168, )"
+            },
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.Bcl.Build": {
+              "target": "Package",
+              "version": "[1.0.14, )"
+            },
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[2.0.0-preview1-final, )"
+            },
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[2.0.0-preview1-final, )"
+            },
+            "Microsoft.NETCore.Platforms": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.Packaging.Tools": {
+              "target": "Package",
+              "version": "[1.0.0-preview1-25301-01, )"
+            },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[2.0.0-preview1-25301-01, )"
+            },
+            "SQLitePCLRaw.bundle_green": {
+              "target": "Package",
+              "version": "[1.1.5, )"
+            },
+            "SQLitePCLRaw.core": {
+              "target": "Package",
+              "version": "[1.1.5, )"
+            },
+            "SQLitePCLRaw.lib.e_sqlite3.linux": {
+              "target": "Package",
+              "version": "[1.1.5, )"
+            },
+            "SQLitePCLRaw.lib.e_sqlite3.osx": {
+              "target": "Package",
+              "version": "[1.1.5, )"
+            },
+            "SQLitePCLRaw.lib.e_sqlite3.v110_xp": {
+              "target": "Package",
+              "version": "[1.1.5, )"
+            },
+            "SQLitePCLRaw.provider.e_sqlite3.net45": {
+              "target": "Package",
+              "version": "[1.1.5, )"
+            },
+            "System.Buffers": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "System.Data.Common": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Memory": {
+              "target": "Package",
+              "version": "[4.5.3, )"
+            },
+            "System.Numerics.Vectors": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "System.Runtime.CompilerServices.Unsafe": {
+              "target": "Package",
+              "version": "[4.5.3, )"
+            },
+            "System.Threading.Tasks.Extensions": {
+              "target": "Package",
+              "version": "[4.5.4, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "linq2db": {
+              "target": "Package",
+              "version": "[6.0.0-preview.4, )"
+            },
+            "linq2db.Compat": {
+              "target": "Package",
+              "version": "[6.0.0-preview.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

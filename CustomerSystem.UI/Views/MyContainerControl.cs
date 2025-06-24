@@ -1,54 +1,63 @@
-using System;
-using System.Windows.Forms;
-using System.Drawing;
+using System.Collections;
 using System.ComponentModel;
+using System.Drawing;
+using System.Windows.Forms;
 using System.Windows.Forms.Design;
 
 namespace CustomerSystem.UI.Views {
     [Designer(typeof(MyContainerControlDesigner))] // 为容器控件指定自定义设计器
     public class MyContainerControl : Control {
-        private Panel headerPanel;
-        private Panel contentPanel;
-        private Panel footerPanel;
-
         // 构造函数
         public MyContainerControl() {
-            this.DoubleBuffered = true; // 防止闪烁
-            this.BackColor = Color.LightGray; // 设置默认背景颜色
-            this.Padding = new Padding(10); // 内边距
-            this.Size = new Size(300, 300); // 默认大小
+            DoubleBuffered = true; // 防止闪烁
+            BackColor = Color.LightGray; // 设置默认背景颜色
+            Padding = new Padding(10); // 内边距
+            Size = new Size(300, 300); // 默认大小
 
             // 初始化面板
             InitializePanels();
         }
 
+        // 可通过这个方法访问面板
+        [Browsable(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        public Panel HeaderPanel { get; private set; }
+
+        [Browsable(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        public Panel ContentPanel { get; private set; }
+
+        [Browsable(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        public Panel FooterPanel { get; private set; }
+
         // 初始化面板
         private void InitializePanels() {
             // 创建头部面板
-            headerPanel = new Panel {
+            HeaderPanel = new Panel {
                 BackColor = Color.LightBlue, // 设置背景色
-                Size = new Size(this.Width - 20, 50), // 设置大小
+                Size = new Size(Width - 20, 50), // 设置大小
                 Location = new Point(10, 10) // 设置位置
             };
 
             // 创建内容面板
-            contentPanel = new Panel {
+            ContentPanel = new Panel {
                 BackColor = Color.LightGreen,
-                Size = new Size(this.Width - 20, 150),
+                Size = new Size(Width - 20, 150),
                 Location = new Point(10, 70)
             };
 
             // 创建底部面板
-            footerPanel = new Panel {
+            FooterPanel = new Panel {
                 BackColor = Color.LightCoral,
-                Size = new Size(this.Width - 20, 50),
-                Location = new Point(10, this.Height - 60)
+                Size = new Size(Width - 20, 50),
+                Location = new Point(10, Height - 60)
             };
 
             // 将面板添加到容器中
-            this.Controls.Add(headerPanel);
-            this.Controls.Add(contentPanel);
-            this.Controls.Add(footerPanel);
+            Controls.Add(HeaderPanel);
+            Controls.Add(ContentPanel);
+            Controls.Add(FooterPanel);
         }
 
         // 重写 OnPaint 方法，来绘制容器的内容（可选）
@@ -56,27 +65,14 @@ namespace CustomerSystem.UI.Views {
             base.OnPaint(e);
 
             // 绘制容器的背景
-            e.Graphics.FillRectangle(new SolidBrush(this.BackColor), this.ClientRectangle);
+            e.Graphics.FillRectangle(new SolidBrush(BackColor), ClientRectangle);
 
             // 绘制边框
-            using (Pen borderPen = new Pen(Color.Black)) {
+            using (var borderPen = new Pen(Color.Black)) {
                 borderPen.Width = 2;
-                e.Graphics.DrawRectangle(borderPen, 0, 0, this.Width - 1, this.Height - 1);
+                e.Graphics.DrawRectangle(borderPen, 0, 0, Width - 1, Height - 1);
             }
         }
-
-        // 可通过这个方法访问面板
-        [Browsable(true)]
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public Panel HeaderPanel => headerPanel;
-
-        [Browsable(true)]
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public Panel ContentPanel => contentPanel;
-
-        [Browsable(true)]
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public Panel FooterPanel => footerPanel;
     }
 
 
@@ -89,17 +85,17 @@ namespace CustomerSystem.UI.Views {
 
             if (myContainerControl != null) {
                 // 可视化设计时支持
-                this.EnableDesignMode(myContainerControl.HeaderPanel, "HeaderPanel");
-                this.EnableDesignMode(myContainerControl.ContentPanel, "ContentPanel");
-                this.EnableDesignMode(myContainerControl.FooterPanel, "FooterPanel");
+                EnableDesignMode(myContainerControl.HeaderPanel, "HeaderPanel");
+                EnableDesignMode(myContainerControl.ContentPanel, "ContentPanel");
+                EnableDesignMode(myContainerControl.FooterPanel, "FooterPanel");
             }
         }
 
         // 禁止改变面板大小
-        public override void InitializeNewComponent(System.Collections.IDictionary defaultValues) {
+        public override void InitializeNewComponent(IDictionary defaultValues) {
             base.InitializeNewComponent(defaultValues);
 
-            var parentControl = this.Control as MyContainerControl;
+            var parentControl = Control as MyContainerControl;
 
             if (parentControl != null) {
                 // 禁止调整面板的大小
@@ -110,7 +106,7 @@ namespace CustomerSystem.UI.Views {
         }
 
         // 阻止拖动和改变控件大小
-        protected override void PostFilterProperties(System.Collections.IDictionary properties) {
+        protected override void PostFilterProperties(IDictionary properties) {
             base.PostFilterProperties(properties);
 
             // 隐藏控件的大小相关属性（如Width和Height）
@@ -122,7 +118,7 @@ namespace CustomerSystem.UI.Views {
         }
 
         // 强制设计时显示控件内部的所有面板
-        protected override void PreFilterProperties(System.Collections.IDictionary properties) {
+        protected override void PreFilterProperties(IDictionary properties) {
             base.PreFilterProperties(properties);
 
             // 这里可以控制哪些属性在设计时显示

@@ -5,9 +5,5 @@ namespace CustomerSystem.UI.Views {
         public UserListPage() {
             InitializeComponent();
         }
-
-
-      
-
     }
 }
